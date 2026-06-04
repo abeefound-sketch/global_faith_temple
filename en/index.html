@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Faith Temple | Memorial & Tribute</title>
+    <meta name="description" content="A humanitarian organization honoring the Fallen Heroes of the Vietnam War.">
+    <!-- GSAP & Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+            overflow: hidden; /* For parallax bounds */
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: -20%; left: -10%; right: -10%; bottom: -20%;
+            background: linear-gradient(to bottom, rgba(30, 37, 32, 0.5) 0%, rgba(30, 37, 32, 1) 100%), url('../images/ai_assets/hero_temple_bg.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+            filter: grayscale(60%) sepia(40%) hue-rotate(60deg) contrast(1.1);
+            transition: filter 1s ease, transform 10s linear;
+        }
+
+        .hero:hover .hero-bg {
+            /* Becomes vivid when the user interacts */
+            filter: grayscale(10%) sepia(0%) hue-rotate(0deg) contrast(1.1);
+            transform: scale(1.02);
+        }
+
+        .film-grain {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent-gold);
+            margin-bottom: var(--space-md);
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: var(--space-lg);
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+            max-width: 600px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: var(--space-md);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-hands-praying logo-icon"></i>
+                Global Faith
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">Vision</a></li>
+                    <li><a href="memorial.html">Memorial</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Donate</a></li>
+                </ul>
+                <div class="lang-switch"><a href="../vi/index.html">VI</a> | <a href="../en/index.html" class="active">EN</a></div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg" data-speed="0.5"></div>
+            <div class="film-grain"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-eyebrow cinematic-text">Honor & Memorial</span>
+                    <h1 class="cinematic-text">Dust returns to dust. The legacy lives forever.</h1>
+                    <p class="cinematic-text">Global Faith Temple was founded to honor the supreme sacrifices of the Fallen Heroes in the Vietnam War for freedom.</p>
+                    <div class="hero-btns cinematic-text">
+                        <a href="donate.html" class="btn btn-primary">Contribute to the Cause</a>
+                        <a href="about.html" class="btn btn-ghost">Explore the Vision <i class="ph ph-arrow-right" style="margin-left:8px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="bento-grid">
+                <div class="bento-card">
+                    <div class="arch-frame">
+                        <div class="film-grain"></div>
+                        <img src="../images/ai_assets/marble_wall.png" class="duotone-sepia" alt="The Marble Wall">
+                    </div>
+                    <i class="ph ph-monument bento-icon"></i>
+                    <h3>The Marble Wall</h3>
+                    <p>A half-mile long monument, engraving the names of fallen soldiers from the ARVN, USA, and 6 allied nations.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="arch-frame">
+                        <div class="film-grain"></div>
+                        <img src="../images/ai_assets/jade_emperor_temple.png" class="duotone-sepia" alt="Global Faith Sanctuary">
+                    </div>
+                    <i class="ph ph-peace bento-icon"></i>
+                    <h3>Global Faith Sanctuary</h3>
+                    <p>A spiritual sanctuary converging faiths from Buddhism, Christianity, and Islam.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="arch-frame">
+                        <div class="film-grain"></div>
+                        <img src="../images/ai_assets/historical_archives.png" class="duotone-sepia" alt="Historical Archives">
+                    </div>
+                    <i class="ph ph-archive bento-icon"></i>
+                    <h3>Historical Archives</h3>
+                    <p>Preserving digital heritage, stories, and artifacts of those who dedicated their lives to freedom.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i class="ph-fill ph-hands-praying logo-icon"></i>
+                    Global Faith
+                </a>
+                <p class="footer-text">17320 N. Mesa Dr, Pauma Valley,<br>San Diego County, California</p>
+                <p class="footer-text">info@globalfaithtemple.org</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <p class="footer-text"><a href="about.html">Vision</a></p>
+                <p class="footer-text"><a href="memorial.html">Memorial</a></p>
+                <p class="footer-text"><a href="events.html">Events</a></p>
+            </div>
+            <div>
+                <h4 class="footer-title">Support</h4>
+                <p class="footer-text"><a href="donate.html">Donate</a></p>
+                <p class="footer-text"><a href="#">Contact</a></p>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+            <p class="footer-text">© 2026 Global Faith Temple. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Custom Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

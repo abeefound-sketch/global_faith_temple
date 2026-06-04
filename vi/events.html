@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự Kiện & Hoạt Động | Global Faith Temple</title>
+    <!-- GSAP & Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .page-header {
+            padding: calc(80px + var(--space-xl)) 0 var(--space-xl);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-secondary);
+        }
+
+        .event-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-md);
+            display: flex;
+            gap: var(--space-lg);
+            align-items: flex-start;
+        }
+
+        .event-date {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: var(--space-md);
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .event-date .month {
+            color: var(--accent-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .event-date .day {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-top: 0.25rem;
+        }
+
+        .event-info h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .event-info p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .event-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .event-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .event-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-hands-praying logo-icon"></i>
+                Global Faith
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Tầm Nhìn</a></li>
+                    <li><a href="memorial.html">Tưởng Niệm</a></li>
+                    <li><a href="events.html" class="active">Sự Kiện</a></li>
+                    <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Đóng Góp</a></li>
+                </ul>
+                <div class="lang-switch"><a href="../vi/events.html" class="active">VI</a> | <a href="../en/events.html">EN</a></div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Sự Kiện & Hoạt Động</h1>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Cùng nhau tưởng nhớ và gắn kết cộng đồng thông qua các buổi lễ tri ân.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                
+                <h2 style="color: var(--accent-gold); margin-bottom: var(--space-lg);">Sự Kiện Sắp Tới</h2>
+
+                <!-- Placeholder for future events -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="month">Tháng 5</div>
+                        <div class="day">30</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Lễ Tưởng Niệm Chiến Sĩ Trận Vong (Memorial Day)</h3>
+                        <p>Buổi lễ cầu nguyện đa tôn giáo dành cho các anh hùng tử sĩ Hoa Kỳ và Đồng Minh đã hy sinh vì nền hòa bình tự do.</p>
+                        <div class="event-meta">
+                            <span><i class="ph ph-clock"></i> 9:00 AM - 12:00 PM</span>
+                            <span><i class="ph ph-map-pin"></i> 17320 N. Mesa Dr, Pauma Valley</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="month">Tháng 4</div>
+                        <div class="day">30</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Lễ Truy Điệu Tháng Tư Đen</h3>
+                        <p>Tưởng nhớ ngày Quốc Hận và tri ân những người lính Việt Nam Cộng Hòa đã chiến đấu bảo vệ quê hương.</p>
+                        <div class="event-meta">
+                            <span><i class="ph ph-clock"></i> 10:00 AM - 14:00 PM</span>
+                            <span><i class="ph ph-map-pin"></i> Global Faith Temple</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="text-align: center; color: var(--text-secondary); margin-top: var(--space-xl);">
+                    * Các sự kiện mới sẽ được cập nhật thường xuyên trên website.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i class="ph-fill ph-hands-praying logo-icon"></i>
+                    Global Faith
+                </a>
+                <p class="footer-text">17320 N. Mesa Dr, Pauma Valley,<br>San Diego County, California</p>
+                <p class="footer-text">info@globalfaithtemple.org</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Khám Phá</h4>
+                <p class="footer-text"><a href="about.html">Tầm Nhìn</a></p>
+                <p class="footer-text"><a href="memorial.html">Tưởng Niệm</a></p>
+                <p class="footer-text"><a href="events.html">Sự Kiện</a></p>
+            </div>
+            <div>
+                <h4 class="footer-title">Hỗ Trợ</h4>
+                <p class="footer-text"><a href="donate.html">Đóng góp</a></p>
+                <p class="footer-text"><a href="#">Liên hệ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Custom Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

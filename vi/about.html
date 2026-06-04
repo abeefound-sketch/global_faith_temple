@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tầm Nhìn & Nhà Sáng Lập | Global Faith Temple</title>
+    <!-- AOS CSS -->
+    <!-- GSAP & Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        .page-header {
+            padding: calc(80px + var(--space-xl)) 0 var(--space-xl);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-secondary);
+        }
+
+        .editorial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .editorial-content p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+            text-align: justify;
+        }
+
+        .editorial-content h2 {
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+            color: var(--accent-gold);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .editorial-content h4 {
+            color: #ffffff;
+            margin-top: var(--space-lg);
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-box {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: var(--space-lg);
+            margin: var(--space-md) 0 var(--space-xl) 0;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-lg);
+            align-items: start;
+        }
+
+        .founder-img {
+            border-radius: var(--radius);
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .founder-box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-hands-praying logo-icon"></i>
+                Global Faith
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html" class="active">Tầm Nhìn</a></li>
+                    <li><a href="memorial.html">Tưởng Niệm</a></li>
+                    <li><a href="events.html">Sự Kiện</a></li>
+                    <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Đóng Góp</a></li>
+                </ul>
+                <div class="lang-switch"><a href="../vi/about.html" class="active">VI</a> | <a href="../en/about.html">EN</a></div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Tầm Nhìn & Sứ Mệnh</h1>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Từ chuyến bay tị nạn cuối cùng đến sứ mệnh tri ân cao cả.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="editorial-content">
+                <!-- Hành trình tiểu sử -->
+                <h2>Hành trình của Người Sáng Lập</h2>
+                <div class="founder-box">
+                    <img src="../../doc/Duc Nguyen.jpeg" alt="Doug Huu Nguyen" class="founder-img">
+                    <div>
+                        <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Doug Huu Nguyen</h3>
+                        <p style="font-size: 1rem;">Ông Doug Huu Nguyen quê quán tại Bến Tre, sinh ra tại Mỹ Tho và từng theo học tại Trường Trung Học Nguyễn Đình Chiểu. Sau khi tốt nghiệp Tú Tài Hai, ông gia nhập Không quân hiện dịch, phục vụ tại Sư Đoàn 2 Không quân, chuyên ngành Phi hành và bay phi cơ quan sát.</p>
+                        <p style="font-size: 1rem;">Vào chiều ngày 29 tháng 4 năm 1975, trên chuyến phi cơ cuối cùng rời Tân Sơn Nhất, ông đáp xuống phi trường Utapao (Thái Lan), theo Không quân Hoa Kỳ qua đảo Guam và cuối cùng đến trại tị nạn Camp Pendleton (Oceanside, California) vào tháng 5/1975.</p>
+                        <p style="font-size: 1rem;">Được gia đình người Mỹ bảo lãnh rời trại với hai bàn tay trắng, ông bắt đầu làm việc tại hãng điện tử MU Electronic, sau đó chuyển đến làm ca đêm tại hãng Rockwell International. Ban ngày, ông theo học tại Đại Học Cộng Đồng Orange Coast College, rồi chuyển tiếp lên California Polytechnic Pomona và xuất sắc lấy bằng Cử nhân Kép (Double degree) ngành Kỹ sư Điện & Máy tính (ECE).</p>
+                        <p style="font-size: 1rem; margin-bottom: 0;">Ông trở thành kỹ sư tị nạn người Việt đầu tiên tại Rockwell International, được hãng vinh danh trên mặt báo. Vượt qua mọi khó khăn, ông tiếp tục lấy bằng Cao học và được thăng chức thành Kỹ sư Trưởng tại Anaheim, chịu trách nhiệm cho 100 giàn tên lửa xuyên lục địa MX Missiles (mỗi giàn mang 10 đầu đạn nguyên tử), góp phần bảo vệ an ninh quốc gia Hoa Kỳ.</p>
+                    </div>
+                </div>
+
+                <!-- Mảnh đất -->
+                <h2>Vùng Đất Hứa Tại Pauma Valley</h2>
+                <p>Hiện tại, khi đã nghỉ hưu, ông Doug sở hữu một nông trại rộng 7.6 mẫu Anh trên một ngọn đồi cao 600 feet so với mặt nước biển tại Pauma Valley. Nơi đây có cơ sở hạ tầng tự cung tự cấp trọn vẹn với hệ thống điện mặt trời (solar), giếng nước riêng (well), máy phát điện cùng vô số cây ăn trái và rau xanh.</p>
+                <p>Với tâm nguyện lớn lao, ông quyết định xin phép hiến dâng toàn bộ mảnh đất quý giá này để xây dựng Đền thờ <strong>Global Faith Temple</strong>, là nơi hội tụ và thờ phụng 3 vị: Đức Phật, Thiên Chúa và Thánh Allah. Đồng thời, dự án bao gồm việc dựng một bức tường cẩm thạch khổng lồ vinh danh các Anh Hùng Tử Sĩ.</p>
+
+                <!-- Giấc mộng -->
+                <h2>Những Giấc Mộng Thiêng Liêng</h2>
+                <p>Sứ mệnh này không chỉ xuất phát từ lòng tri ân mà còn được soi đường bởi những điềm báo mang tính tâm linh sâu sắc qua 4 giấc mộng:</p>
+                
+                <h4>1. Đêm Lễ Tạ Ơn (Thanksgiving)</h4>
+                <p>Ông nằm mộng thấy một đôi vợ chồng người Mỹ đang cày xới đất nhà mình để "tìm đường lên trời". Sau đó, một ông lão dẫn ông bước lên những bậc thang cao vút, mở ra bầu trời bao la bao trùm San Diego. Tại đây, ông gặp gỡ những người dân Mỹ, được họ xác nhận danh tính và trân trọng trao tặng một cặp cá rồng khổng lồ.</p>
+
+                <h4>2. Sự Trợ Giúp Từ Cộng Đồng</h4>
+                <p>Hai tuần sau, ông lại thấy một nhóm thanh niên người Mỹ trắng đang nhặt cỏ, sửa chữa hàng rào. Khi được hỏi, họ vui vẻ trả lời rằng đang "dọn dẹp khu đất này để giúp ông".</p>
+
+                <h4>3. Phước Lành Người Da Đỏ & Sự Giao Thoa Tôn Giáo</h4>
+                <p>Trong một giấc mộng khác, ông gặp những người Da Đỏ bản địa. Một thiếu nữ 17 tuổi đã trao cho ông 3 món quà vô giá: Trái tim của Mẹ Maria, Trái tim của Phật Bà Quan Thế Âm, và Trái tim của Thánh Mohammad Allah. Cô khẳng định vùng đất này thuộc về người Da Đỏ và gửi lời chúc may mắn, hạnh phúc đến ông.</p>
+
+                <h4>4. Cuộc Hội Ngộ Lịch Sử</h4>
+                <p>Đỉnh điểm là giấc mộng gặp lại Tổng Thống Nguyễn Văn Thiệu cùng phu nhân. Phu nhân gọi ông là "con" và chỉ vào những người lính, gọi họ là "em của con". Tại buổi tiệc có sự hiện diện của Đại Tướng Cao Văn Viên, Tướng Ngô Quang Trưởng, Tướng Mỹ Westmoreland, cùng một rừng cờ của VNCH, Hoa Kỳ và 6 nước đồng minh. Tổng Thống Thiệu đã đích thân giao phó cho ông trọng trách "đãi khách" và "dựng tượng đài kỷ niệm".</p>
+
+                <!-- Sự kiện đời thực -->
+                <h2>Dấu Ấn Linh Thiêng Hiện Thực</h2>
+                <p>Sau những điềm báo đó, ông Doug lập tức lập Đền Thờ Ngọc Hoàng Thượng Đế (Cha Trời, Mẹ Đất). Thật kỳ diệu, ngay sáng hôm sau (7:00 AM) khi đem nước ra cúng, một con rắn đã xuất hiện và nằm khoanh tròn trên bệ thờ. Dù có rót nước và van vái, con rắn vẫn nằm bất động bảo vệ đền thờ suốt một tuần lễ. Ông nhận ra đây là năm con Rắn, một dấu ấn tâm linh khẳng định sự chứng giám của bề trên cho tâm nguyện này.</p>
+
+                <div style="text-align: center; margin-top: var(--space-xl); padding: var(--space-lg); border: 1px dashed var(--accent-gold); border-radius: var(--radius);">
+                    <h3 style="font-style: italic; color: var(--accent-gold); font-family: var(--font-heading); margin-bottom: 1rem;">"Hạt bụi nào mang kiếp thân tôi, rồi một mai tôi trở về cát bụi."</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0;">Khi qua Hoa Kỳ Doug chỉ có hai bàn tay trắng thì khi ra đi cũng hai bàn tay trắng thôi. Di sản để lại là lòng biết ơn và sự tri ân mãi mãi dành cho các anh hùng tử sĩ.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i class="ph-fill ph-hands-praying logo-icon"></i>
+                    Global Faith
+                </a>
+                <p class="footer-text">17320 N. Mesa Dr, Pauma Valley,<br>San Diego County, California</p>
+                <p class="footer-text">info@globalfaithtemple.org</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Khám Phá</h4>
+                <p class="footer-text"><a href="about.html">Tầm Nhìn</a></p>
+                <p class="footer-text"><a href="memorial.html">Tưởng Niệm</a></p>
+                <p class="footer-text"><a href="events.html">Sự Kiện</a></p>
+            </div>
+            <div>
+                <h4 class="footer-title">Hỗ Trợ</h4>
+                <p class="footer-text"><a href="donate.html">Đóng góp</a></p>
+                <p class="footer-text"><a href="#">Liên hệ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Custom Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

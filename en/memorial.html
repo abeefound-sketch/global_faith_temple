@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial & Archives | Global Faith Temple</title>
+    <!-- GSAP & Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .page-header {
+            padding: calc(80px + var(--space-xl)) 0 var(--space-xl);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-secondary);
+        }
+        
+        .feature-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .feature-split:nth-child(even) {
+            direction: rtl;
+        }
+        .feature-split:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .feature-img-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-family: var(--font-body);
+        }
+
+        @media (max-width: 768px) {
+            .feature-split {
+                grid-template-columns: 1fr;
+            }
+            .feature-split:nth-child(even) {
+                direction: ltr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-hands-praying logo-icon"></i>
+                Global Faith
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Vision</a></li>
+                    <li><a href="memorial.html" class="active">Memorial</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Donate</a></li>
+                </ul>
+                <div class="lang-switch"><a href="../vi/memorial.html">VI</a> | <a href="../en/memorial.html" class="active">EN</a></div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Memorial & Archives</h1>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Preserving names and historical stories for future generations.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <!-- The Marble Wall & Profile Template -->
+            <div class="feature-split cinematic-text">
+                <div>
+                    <h2 style="color: var(--accent-gold);">The Virtual Wall</h2>
+                    <p>The centerpiece of Global Faith Temple is a half-mile long, 10-foot high marble wall project. It will honor and engrave the names of all Fallen Heroes who died for freedom in the Vietnam War.</p>
+                    <p>Below is the digital archive profile template of a Hero on the Virtual Wall.</p>
+                </div>
+                <!-- Profile Blueprint -->
+                <div class="bento-card">
+                    <div class="arch-frame" style="aspect-ratio: 1/1; border-radius: 50%; clip-path: none; width: 150px; margin: 0 auto 1rem;">
+                        <div class="film-grain"></div>
+                        <img src="../images/ai_assets/soldier_portrait.png" class="duotone-sepia" alt="Soldier Portrait" style="border-radius: 50%;">
+                    </div>
+                    <div style="text-align: center;">
+                        <h3 style="margin-bottom: 0.2rem; color: var(--accent-gold);">Nguyen Van A</h3>
+                        <p style="font-family: var(--font-heading); color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">Captain - ARVN Airborne</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <p><strong>Birthplace:</strong> Saigon, Vietnam</p>
+                        <p><strong>Year of Birth:</strong> 1945</p>
+                        <p><strong>Engagements:</strong> The Easter Offensive (1972)</p>
+                    </div>
+                    <div style="margin-top: 1rem; background: var(--bg-primary); padding: 1rem; border-radius: 8px; font-style: italic; border-left: 3px solid var(--accent-gold);">
+                        "Lighting an incense stick to remember your heroic sacrifice for freedom."<br>
+                        <span style="font-size: 0.8rem; color: var(--accent-gold);">- Online Community, 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Archives -->
+            <div class="feature-split cinematic-text">
+                <div>
+                    <h2 style="color: var(--accent-gold);">Digital Archives</h2>
+                    <p>Besides the physical memorial, we are building a digitized archive. Every name on the wall is not just a text line, but a human being with a family, dreams, and a life story.</p>
+                    <p>The archive will allow researching, searching, and contributing historical materials, helping the younger generation better understand the silent sacrifices.</p>
+                </div>
+                <div class="feature-img-placeholder">
+                    <!-- TODO: Hình ảnh giao diện thư viện số -->
+                    [ Digital Archive Image ]
+                </div>
+            </div>
+
+            <!-- Gravesite Restoration -->
+            <div class="feature-split cinematic-text">
+                <div>
+                    <h2 style="color: var(--accent-gold);">Gravesite Restoration</h2>
+                    <p>We carry out activities to preserve, clean, and care for the graves of the soldiers, ensuring their resting place is always dignified and respected.</p>
+                </div>
+                <div class="feature-img-placeholder">
+                    <!-- TODO: Hình ảnh hoạt động trùng tu -->
+                    [ Restoration Activity Image ]
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i class="ph-fill ph-hands-praying logo-icon"></i>
+                    Global Faith
+                </a>
+                <p class="footer-text">17320 N. Mesa Dr, Pauma Valley,<br>San Diego County, California</p>
+                <p class="footer-text">info@globalfaithtemple.org</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Explore</h4>
+                <p class="footer-text"><a href="about.html">Vision</a></p>
+                <p class="footer-text"><a href="memorial.html">Memorial</a></p>
+                <p class="footer-text"><a href="events.html">Events</a></p>
+            </div>
+            <div>
+                <h4 class="footer-title">Support</h4>
+                <p class="footer-text"><a href="donate.html">Donate</a></p>
+                <p class="footer-text"><a href="#">Contact</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Custom Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
