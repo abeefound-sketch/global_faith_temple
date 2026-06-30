@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Faith | Thư Viện & Ký Ức</title>
+    <meta name="description" content="Thư viện hình ảnh và âm nhạc tri ân các Anh hùng Tử sĩ Chiến tranh Việt Nam.">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .media-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .media-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .media-thumb {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #111;
+            display: block;
+        }
+
+        .media-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .media-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .media-card:hover .media-overlay {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .play-icon {
+            font-size: 4rem;
+            color: #fff;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8));
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .media-card:hover .play-icon {
+            transform: scale(1.1);
+            color: #ff0000;
+        }
+
+        .media-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .media-title {
+            color: var(--accent-gold);
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .media-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-hands-praying logo-icon"></i>
+                Global Faith
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Tầm Nhìn</a></li>
+                    <li><a href="memorial.html">Tưởng Niệm</a></li>
+                    <li><a href="media.html" class="active">Thư Viện</a></li>
+                    <li><a href="events.html">Sự Kiện</a></li>
+                    <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Đóng Góp</a></li>
+                </ul>
+                <div class="lang-switch"><a href="../vi/media.html" class="active">VI</a> | <a href="../en/media.html">EN</a></div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px; padding-bottom: 80px;">
+        <section class="section container">
+            <div style="text-align: center; margin-bottom: var(--space-xl);">
+                <h1 style="color: var(--accent-gold); font-size: 3rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">Thư Viện & Ký Ức</h1>
+                <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Những thước phim lịch sử quý giá và các giai điệu tri ân làm lay động lòng người, lưu giữ mãi mãi ký ức về một thời hoa lửa.</p>
+            </div>
+
+            <div class="media-grid">
+                <!-- Video 1 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=LsJjCU2NbbI" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/LsJjCU2NbbI/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/LsJjCU2NbbI/hqdefault.jpg'" alt="Gregorian Chant">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Bản Thánh Ca Bình Yên</h3>
+                        <p class="media-desc">Những âm điệu Gregorian thiêng liêng mang lại sự bình yên cho tâm hồn, như một lời cầu nguyện tĩnh lặng xoa dịu những nỗi đau của quá khứ.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=GR2JxGRIcLs" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/GR2JxGRIcLs/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/GR2JxGRIcLs/hqdefault.jpg'" alt="Tháng 4">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Tháng 4 ! 51 Năm Nhìn Lại</h3>
+                        <p class="media-desc">Thước phim tài liệu quý giá nhìn lại biến cố Tháng Tư Đen sau hơn nửa thế kỷ, để ghi nhớ và truyền lại cho thế hệ mai sau.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=18tgfI5eUfc" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/18tgfI5eUfc/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/18tgfI5eUfc/hqdefault.jpg'" alt="Danh dự Trách nhiệm Tổ quốc">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Danh Dự – Trách Nhiệm – Tổ Quốc</h3>
+                        <p class="media-desc">Kỷ niệm Ngày Quân Lực Việt Nam Cộng Hòa – Một thời danh dự bảo vệ miền Nam, một đời tri ân các chiến sĩ anh hùng.</p>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=VPGjyX5j0dE" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/VPGjyX5j0dE/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/VPGjyX5j0dE/hqdefault.jpg'" alt="The Star-Spangled Banner">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Quốc Ca Hoa Kỳ (The Star-Spangled Banner)</h3>
+                        <p class="media-desc">Bản hùng ca của Hợp Chúng Quốc Hoa Kỳ, đất nước tự do đã dang tay cưu mang và đồng hành cùng người tị nạn trên quê hương thứ hai.</p>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=sg8XF7HzEks" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/sg8XF7HzEks/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/sg8XF7HzEks/hqdefault.jpg'" alt="Tri Ơn Chiến Sĩ">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Tri Ơn Chiến Sĩ VNCH & Đồng Minh</h3>
+                        <p class="media-desc">Lời cảm tạ chân thành và sâu sắc gửi đến lực lượng Quân Lực VNCH cùng các nước đồng minh (Mỹ, Hàn Quốc, Úc...) đã kề vai sát cánh.</p>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=fIJKBkiJt6A" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/fIJKBkiJt6A/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/fIJKBkiJt6A/hqdefault.jpg'" alt="Chiến Sĩ Vô Danh">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Chiến Sĩ Vô Danh</h3>
+                        <p class="media-desc">Bản hùng ca bất hủ của nhạc sĩ Phạm Duy, do Ca Đoàn Ngàn Khơi trình bày, như một nén tâm nhang dâng lên những người con đã ngã xuống vì tự do.</p>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=g6yaRxQw3vw" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/g6yaRxQw3vw/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/g6yaRxQw3vw/hqdefault.jpg'" alt="Cảm Tạ Miền Nam">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Cảm Tạ Miền Nam</h3>
+                        <p class="media-desc">Lời tri ân sâu sắc gửi đến mảnh đất Miền Nam Tự Do, nơi đã ôm ấp bao thế hệ con người Việt Nam trước năm 1975.</p>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=GWs7lIqzsgY" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Xem trên YouTube">
+                        <img src="https://img.youtube.com/vi/GWs7lIqzsgY/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/GWs7lIqzsgY/hqdefault.jpg'" alt="Lý Tống">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Lý Tống – 44 Năm Lưu Vong</h3>
+                        <p class="media-desc">Cuộc chiến không kết thúc sau 1975 của người anh hùng Lý Tống, phi công hào hoa của không lực VNCH với những chuyến bay lịch sử.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center; color: var(--text-secondary);">
+            <p>&copy; 2026 Global Faith. Tôn vinh các Anh hùng.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

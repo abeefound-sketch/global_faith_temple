@@ -68,6 +68,7 @@
                     <li><a href="index.html">Trang Chủ</a></li>
                     <li><a href="about.html">Tầm Nhìn</a></li>
                     <li><a href="memorial.html" class="active">Tưởng Niệm</a></li>
+                    <li><a href="media.html">Thư Viện</a></li>
                     <li><a href="events.html">Sự Kiện</a></li>
                     <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Đóng Góp</a></li>
                 </ul>
@@ -96,8 +97,29 @@
             <div style="text-align: center; margin-bottom: var(--space-xl);">
                 <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">Giai Điệu Tri Ân</h2>
                 <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 2rem;">Bản hùng ca "Chiến Sĩ Vô Danh" (Sáng tác: Phạm Duy) vang lên như một nén tâm nhang thành kính dâng lên những người anh hùng đã ngã xuống vì tự do.</p>
+                <style>
+                    .yt-thumbnail {
+                        display: block; position: relative; width: 100%; height: 450px; background: url('https://img.youtube.com/vi/fIJKBkiJt6A/hqdefault.jpg') center/cover no-repeat;
+                    }
+                    .yt-overlay {
+                        position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; transition: background 0.3s ease;
+                    }
+                    .yt-thumbnail:hover .yt-overlay {
+                        background: rgba(0,0,0,0.2);
+                    }
+                    .yt-play-icon {
+                        font-size: 6rem; color: #ff0000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8)); transition: transform 0.3s ease;
+                    }
+                    .yt-thumbnail:hover .yt-play-icon {
+                        transform: scale(1.1);
+                    }
+                </style>
                 <div style="max-width: 800px; margin: 0 auto; border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/fIJKBkiJt6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+                    <a href="https://www.youtube.com/watch?v=fIJKBkiJt6A" target="_blank" rel="noopener noreferrer" class="yt-thumbnail" title="Mở video trên YouTube">
+                        <div class="yt-overlay">
+                            <i class="ph-fill ph-youtube-logo yt-play-icon"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -185,3 +207,6 @@
     <script src="../js/main.js"></script>
 </body>
 </html>
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Faith | Media & Memories</title>
+    <meta name="description" content="Media library honoring the Fallen Heroes of the Vietnam War.">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .media-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .media-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .media-thumb {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #111;
+            display: block;
+        }
+
+        .media-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .media-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .media-card:hover .media-overlay {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .play-icon {
+            font-size: 4rem;
+            color: #fff;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.8));
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .media-card:hover .play-icon {
+            transform: scale(1.1);
+            color: #ff0000;
+        }
+
+        .media-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .media-title {
+            color: var(--accent-gold);
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .media-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-hands-praying logo-icon"></i>
+                Global Faith
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Vision</a></li>
+                    <li><a href="memorial.html">Memorial</a></li>
+                    <li><a href="media.html" class="active">Media</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="donate.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Donate</a></li>
+                </ul>
+                <div class="lang-switch"><a href="../vi/media.html">VI</a> | <a href="../en/media.html" class="active">EN</a></div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px; padding-bottom: 80px;">
+        <section class="section container">
+            <div style="text-align: center; margin-bottom: var(--space-xl);">
+                <h1 style="color: var(--accent-gold); font-size: 3rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">Media & Memories</h1>
+                <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Historical footage and tribute melodies that touch the heart, forever preserving the memories of a heroic era.</p>
+            </div>
+
+            <div class="media-grid">
+                <!-- Video 1 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=LsJjCU2NbbI" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/LsJjCU2NbbI/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/LsJjCU2NbbI/hqdefault.jpg'" alt="Gregorian Chant">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">The Peaceful Chant</h3>
+                        <p class="media-desc">Sacred Gregorian chants bringing peace to the soul, acting as a silent prayer for the fallen.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=GR2JxGRIcLs" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/GR2JxGRIcLs/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/GR2JxGRIcLs/hqdefault.jpg'" alt="April 51 Years">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">April: 51 Years Looking Back</h3>
+                        <p class="media-desc">Precious documentary footage looking back at the Black April tragedy after more than half a century, preserved for future generations.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=18tgfI5eUfc" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/18tgfI5eUfc/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/18tgfI5eUfc/hqdefault.jpg'" alt="Honor Duty Country">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Honor - Duty - Country</h3>
+                        <p class="media-desc">Commemorating the RVN Armed Forces Day - An era of honor defending the South, a lifetime of gratitude to the heroic soldiers.</p>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=VPGjyX5j0dE" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/VPGjyX5j0dE/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/VPGjyX5j0dE/hqdefault.jpg'" alt="The Star-Spangled Banner">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">The Star-Spangled Banner</h3>
+                        <p class="media-desc">The epic anthem of the United States, the land of freedom that embraced and stood with refugees on their second homeland.</p>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=sg8XF7HzEks" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/sg8XF7HzEks/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/sg8XF7HzEks/hqdefault.jpg'" alt="Gratitude to RVNAF">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Gratitude to RVNAF & Allies</h3>
+                        <p class="media-desc">Sincere and deep gratitude to the Republic of Vietnam Armed Forces and allied nations (US, South Korea, Australia, etc.) who stood side by side.</p>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=fIJKBkiJt6A" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/fIJKBkiJt6A/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/fIJKBkiJt6A/hqdefault.jpg'" alt="The Unknown Soldier">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">The Unknown Soldier</h3>
+                        <p class="media-desc">The immortal epic by musician Pham Duy, performed by Ngan Khoi Choir, as a tribute to those who fell for freedom.</p>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=g6yaRxQw3vw" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/g6yaRxQw3vw/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/g6yaRxQw3vw/hqdefault.jpg'" alt="Gratitude to the South">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Gratitude to the South</h3>
+                        <p class="media-desc">A profound tribute to the Free South, a land that embraced generations of Vietnamese people before 1975.</p>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div class="media-card">
+                    <a href="https://www.youtube.com/watch?v=GWs7lIqzsgY" target="_blank" rel="noopener noreferrer" class="media-thumb" title="Watch on YouTube">
+                        <img src="https://img.youtube.com/vi/GWs7lIqzsgY/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/GWs7lIqzsgY/hqdefault.jpg'" alt="Ly Tong">
+                        <div class="media-overlay"><i class="ph-fill ph-play-circle play-icon"></i></div>
+                    </a>
+                    <div class="media-content">
+                        <h3 class="media-title">Ly Tong – 44 Years in Exile</h3>
+                        <p class="media-desc">The unending war after 1975 of hero Ly Tong, the gallant RVNAF pilot with historic flights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center; color: var(--text-secondary);">
+            <p>&copy; 2026 Global Faith. Honoring the Heroes.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
