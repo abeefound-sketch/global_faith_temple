@@ -1,0 +1,27 @@
+{
+  "payload": {
+    "_stream_debug": {
+      "event_count": 0,
+      "extra": {
+        "body": "{\n  \"error\": {\n    \"message\": \"Your authentication token has been invalidated. Please try signing in again.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"token_invalidated\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+        "status": 401,
+        "terminal_event": "http_error"
+      },
+      "last_event_type": "",
+      "parse_error_count": 0,
+      "recent_events": [],
+      "recent_events_order": "newest_first",
+      "valid_event_count": 0
+    },
+    "error": {
+      "code": "token_invalidated",
+      "message": "Your authentication token has been invalidated. Please try signing in again.",
+      "param": null,
+      "status": 401,
+      "status_code": 401,
+      "type": "invalid_request_error"
+    }
+  },
+  "status": "failed",
+  "tool_calls": []
+}

@@ -1,0 +1,27 @@
+{
+  "payload": {
+    "_stream_debug": {
+      "event_count": 0,
+      "extra": {
+        "body": "{\n  \"error\": {\n    \"message\": \"Provided authentication token is expired. Please try signing in again.\",\n    \"type\": null,\n    \"code\": \"token_expired\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+        "status": 401,
+        "terminal_event": "http_error"
+      },
+      "last_event_type": "",
+      "parse_error_count": 0,
+      "recent_events": [],
+      "recent_events_order": "newest_first",
+      "valid_event_count": 0
+    },
+    "error": {
+      "code": "token_expired",
+      "message": "Provided authentication token is expired. Please try signing in again.",
+      "param": null,
+      "status": 401,
+      "status_code": 401,
+      "type": null
+    }
+  },
+  "status": "failed",
+  "tool_calls": []
+}

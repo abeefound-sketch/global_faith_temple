@@ -1,0 +1,34 @@
+{"ts": 1782834748.8446116, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834748.8481193, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834751.0921993, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834751.0962212, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834753.249208, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834753.2514849, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834755.4132664, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834755.4161577, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834803.7698593, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834803.7749872, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834806.7733717, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834806.7800193, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834809.354358, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834809.3598392, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834811.7415137, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834811.7468636, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834814.2589931, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834814.2652662, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834816.621899, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834816.6269617, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782834850.4126217, "message": "runtime nudge queued (read-only subagents)", "extra": {"readonly_shell_streak": 3, "readonly_shell_output_chars": 9676}}
+{"ts": 1782834870.96239, "message": "runtime nudge queued (reasoning effort)", "extra": {"signal": "A shell command failed (exit 2)."}}
+{"ts": 1782834870.9658043, "message": "reasoning effort nudge queued after shell error", "extra": {"call_id": "call_P7QIw9xVrPJeDEyV6HbqQFiR", "exit_code": 2}}
+{"ts": 1782834963.5989814, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834965.8451936, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782834965.8503656, "message": "micro-compact skipped (startup unfinished session tail)"}
+{"ts": 1782835061.2781355, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782835107.5386996, "message": "runtime nudge queued (read-only subagents)", "extra": {"readonly_shell_streak": 3, "readonly_shell_output_chars": 6158}}
+{"ts": 1782835234.0062027, "message": "runtime nudge queued (read-only subagents)", "extra": {"readonly_shell_streak": 3, "readonly_shell_output_chars": 11264}}
+{"ts": 1782835401.649146, "message": "runtime nudge queued (read-only subagents)", "extra": {"readonly_shell_streak": 3, "readonly_shell_output_chars": 9709}}
+{"ts": 1782835840.7376366, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782835841.0653849, "message": "micro-compact triggered (startup)", "extra": {"min_saved": 0, "saved_tokens": 8429}}
+{"ts": 1782858865.231148, "message": "environment_context refreshed (removed stale items)", "extra": {"removed": 1, "workdir": "/mnt/d/5projects/globalfaith"}}
+{"ts": 1782858865.5375876, "message": "micro-compact triggered (startup)", "extra": {"min_saved": 0, "saved_tokens": 1722}}
